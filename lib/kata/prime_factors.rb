@@ -1,12 +1,19 @@
 module Kata
   class PrimeFactors
     def convert(number)
-      if number == 1
-        []
-      else
-        primes = []
-        primes << number
+      return [] if number == 1
+
+      primes = []
+
+      if number.even?
+        primes << 2
+        number /= 2
       end
+
+      primes << number if number > 1
+
+      primes
     end
   end
 end
+

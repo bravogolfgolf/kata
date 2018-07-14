@@ -21,7 +21,7 @@ RSpec.describe Kata do
     expect(primes).to eq([3])
   end
 
-  xit "should return list of prime factors of 4" do
+  it "should return list of prime factors of 4" do
     prime_factors = Kata::PrimeFactors.new
     primes = prime_factors.convert(4)
     expect(primes).to eq([2, 2])
