@@ -147,21 +147,27 @@ RSpec.describe Kata do
     expect(primes).to eq([2, 2, 2, 3])
   end
 
-  xit "should return list of prime factors of 25" do
+  it "should return list of prime factors of 25" do
     prime_factors = Kata::PrimeFactors.new
     primes = prime_factors.convert(25)
     expect(primes).to eq([5, 5])
   end
 
-  xit "should return list of prime factors of 26" do
+  it "should return list of prime factors of 26" do
     prime_factors = Kata::PrimeFactors.new
     primes = prime_factors.convert(26)
     expect(primes).to eq([2, 13])
   end
 
-  xit "should return list of prime factors of 27" do
+  it "should return list of prime factors of 27" do
     prime_factors = Kata::PrimeFactors.new
     primes = prime_factors.convert(27)
     expect(primes).to eq([3, 3, 3])
+  end
+
+  it "should return list of prime factors of 125" do
+    prime_factors = Kata::PrimeFactors.new
+    primes = prime_factors.convert(125)
+    expect(primes).to eq([5, 5, 5])
   end
 end
