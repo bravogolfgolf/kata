@@ -5,7 +5,7 @@ module Kata
 
       primes = []
 
-      if number.even?
+      while number.even?
         primes << 2
         number /= 2
       end
