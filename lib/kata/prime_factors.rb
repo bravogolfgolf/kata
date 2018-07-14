@@ -5,9 +5,14 @@ module Kata
 
       primes = []
 
-      while number.even?
+      while (number % 2).zero?
         primes << 2
         number /= 2
+      end
+
+      if (number % 3).zero?
+        primes << 3
+        number /= 3
       end
 
       primes << number if number > 1

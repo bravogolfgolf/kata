@@ -50,4 +50,10 @@ RSpec.describe Kata do
     primes = prime_factors.convert(8)
     expect(primes).to eq([2, 2, 2])
   end
+
+  it "should return list of prime factors of 9" do
+    prime_factors = Kata::PrimeFactors.new
+    primes = prime_factors.convert(9)
+    expect(primes).to eq([3, 3])
+  end
 end
