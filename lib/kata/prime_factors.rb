@@ -4,16 +4,14 @@ module Kata
 
       primes = []
 
-      counter = 2
-      while counter < number
-        while (number % counter).zero?
-          primes << counter
-          number /= counter
+      candidate = 2
+      while number > 1
+        while (number % candidate).zero?
+          primes << candidate
+          number /= candidate
         end
-        counter += 1
+        candidate += 1
       end
-
-      primes << number if number > 1
 
       primes
     end
