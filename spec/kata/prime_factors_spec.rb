@@ -1,6 +1,5 @@
 RSpec.describe Kata::PrimeFactors do
-
-  let(:prime_factors) {described_class.new}
+  let(:prime_factors) { described_class.new }
 
   it "has a version number" do
     expect(Kata::VERSION).not_to be nil

@@ -1,7 +1,6 @@
 module Kata
   class PrimeFactors
     def convert(number)
-
       primes = []
 
       candidate = 2
@@ -17,4 +16,3 @@ module Kata
     end
   end
 end
-
