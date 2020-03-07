@@ -8,6 +8,7 @@
 /tmp/
 
 .DS_Store
+.idea/
 
 # rspec failure tracking
 .rspec_status
